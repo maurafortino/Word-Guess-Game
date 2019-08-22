@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap" rel="stylesheet">
+
     <!--Bootstrap Link-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!--Local CSS Link-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--JS link-->
+    <script src="assets/javascript/game.js"></script>
     <title>Word Guess Game</title>
 </head>
 
@@ -21,6 +27,46 @@
         <a class="navbar-brand" href="#">Strong Female Characters</a>
     </nav>
 
+    <div class="container">
+
+        <!--directions to the game; always shown-->
+        <div class="row">
+            <div class="col-12">
+                <h2>Directions</h2>
+                <ol>
+                    <li>Each character in this game is a strong female character in literature</li>
+                    <li>Guess the characters name one letter at a time using your keyboard</li>
+                    <li>But, be careful! You only have a certain amount of guesses to get it correct</li>
+                </ol>
+                <p>So, what do you say? Do you want to play?</p> 
+                <button onclick="startGame();">Let's Play!</button>
+            </div>
+        </div>
+        
+
+        <div id="showGame" class="row mt-3">
+            <!--left side of container - holds image of guess and a hint button-->
+            <div class="col-6">
+                <div id="imagePlaceHolder">just random text for now</div>
+                <input type="text" id ="guess" onkeydown="moveLetter();">
+                <div class="give-hint">
+                    <button onclick="showHint();">Give Me a Hint</button>
+                    <p id="hint"></p>
+                </div>
+            </div>
+
+            <!--right side of container - holds the guesses, how many guesses left, and the word being guessed-->
+            <div class="col-6">
+                <p id ="random"></p>
+                <p id="answer"></p>
+                <p id="guessedLetters">also random</p>
+                <p id="guessesLeft">random!</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Native JS link-->
+    <script src="assets/javascript/game.js"></script>
 
     <!--Bootstrap Javascript-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
