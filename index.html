@@ -47,7 +47,7 @@
         <div id="showGame" class="row mt-3">
             <!--left side of container - holds image of guess and a hint button-->
             <div class="col-6">
-                <div id="imagePlaceHolder">just random text for now</div>
+                <img id="image-place-holder">
                 <input type="text" id ="guess" onkeydown="moveLetter();">
                 <div class="give-hint">
                     <button onclick="showHint();">Give Me a Hint</button>
@@ -57,10 +57,9 @@
 
             <!--right side of container - holds the guesses, how many guesses left, and the word being guessed-->
             <div class="col-6">
-                <p id ="random"></p>
                 <p id="answer"></p>
-                <p id="guessedLetters">also random</p>
-                <p id="guessesLeft">random!</p>
+                <p id="guessed-letters">also random</p>
+                <p id="guesses-left">random!</p>
             </div>
         </div>
     </div>
