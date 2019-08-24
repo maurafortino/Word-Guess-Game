@@ -1,7 +1,43 @@
 /*JavaScript Styles*/
 
 /* this will show when user guesses the correct name */
+body{
+    font-family: 'Libre Baskerville', serif;
+    background-image: url('../images/431.jpg');
+}
 .navbar-brand{
     font-family: 'Homemade Apple', cursive;
+    color: black;
+    font-size: 2rem;
 }
 
+input{
+    background-color: lightgoldenrodyellow;
+}
+
+#image-place-holder, input{
+    width: 200px;
+}
+
+.start {
+    display: inline;
+}
+
+
+button{
+    background-color: lightgoldenrodyellow;
+    border: none;
+}
+
+footer p a{
+    color: black;
+}
+
+.score-style{
+    border: black solid 1px;
+    font-size: 1.5rem;
+}
+
+.game-style{
+    border: black solid 1px;
+}
