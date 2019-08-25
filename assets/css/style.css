@@ -41,3 +41,21 @@ footer p a{
 .game-style{
     border: black solid 1px;
 }
+
+.answer-style{
+    border: black solid 1px;
+    background-color: rgba(225, 225, 225, .5);
+    text-align: center;
+    padding: 5px;
+}
+
+.guessed-letters-group{
+    border: black solid 1px;
+    background-color: rgba(225, 225, 225, .5);
+    text-align: center;
+}
+.guesses-left-group{
+    border: black solid 1px;
+    background-color: rgba(225, 225, 225, .5);
+    text-align: center;
+}
